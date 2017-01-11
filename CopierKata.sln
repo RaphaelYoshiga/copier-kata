@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopierKata", "CopierKata\CopierKata.csproj", "{CF4548A7-8551-45C0-B312-31E8CC193425}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{58AFDC83-CAC1-4E26-8D66-5763E9F32E76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoperKata.UnitTests", "CoperKata.UnitTests\CoperKata.UnitTests.csproj", "{E8600E6A-0ACC-4A74-931B-AFA02E7F0809}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{CF4548A7-8551-45C0-B312-31E8CC193425}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF4548A7-8551-45C0-B312-31E8CC193425}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF4548A7-8551-45C0-B312-31E8CC193425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8600E6A-0ACC-4A74-931B-AFA02E7F0809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8600E6A-0ACC-4A74-931B-AFA02E7F0809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8600E6A-0ACC-4A74-931B-AFA02E7F0809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8600E6A-0ACC-4A74-931B-AFA02E7F0809}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E8600E6A-0ACC-4A74-931B-AFA02E7F0809} = {58AFDC83-CAC1-4E26-8D66-5763E9F32E76}
 	EndGlobalSection
 EndGlobal
