@@ -1,4 +1,5 @@
-﻿using FluentAssertions;
+﻿using CopierKata;
+using FluentAssertions;
 using NUnit.Framework;
 
 namespace CoperKata.UnitTests
@@ -33,57 +34,6 @@ namespace CoperKata.UnitTests
 
             destination.Characters.Should().Be("AB");
         }
-    }
-
-    public class Copier
-    {
-        private readonly ISource _source;
-        private readonly IDestination _destination;
-
-        public Copier(ISource source, IDestination destination)
-        {
-            _destination = destination;
-            _source = source;
-        }
-
-        public void Copy()
-        {
-            char character;
-            while ((character = _source.GetChar()) != '\n')
-            {
-                _destination.SetChar(character);
-            }
-
-        }
-    }
-
-    public class SourceStub : ISource
-    {
-        private string _characters;
-
-        public void SetupCharacters(string characters)
-        {
-            _characters = characters;
-        }
-
-        public char GetChar()
-        {
-            var character = _characters[0];
-            if (_characters.Length > 1)
-                _characters = _characters.Substring(1, _characters.Length - 1);
-
-            return character;
-        }
-    }
-
-    public interface ISource
-    {
-        char GetChar();
-    }
-
-    public interface IDestination
-    {
-        void SetChar(char character);
     }
 
     public class DestinationSpy : IDestination
